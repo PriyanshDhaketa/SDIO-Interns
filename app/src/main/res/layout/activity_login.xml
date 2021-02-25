@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:backgroundTint="@color/white"
     android:orientation="vertical"
     tools:context=".Login">
     
@@ -71,7 +72,7 @@
             android:layout_width="match_parent"
             android:id="@+id/edt_pass"
             android:textColorHint="@color/black"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black"
             app:passwordToggleEnabled="true"
@@ -101,7 +102,7 @@
             android:layout_height="60dp"
             android:text="NEW USER? SIGN UP"
             android:layout_marginTop="5dp"
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_go_to_register"
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:background="@color/trans"

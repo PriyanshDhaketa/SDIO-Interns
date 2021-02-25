@@ -11,7 +11,7 @@
         android:id="@+id/img_logo"
         android:layout_width="240dp"
         android:layout_height="204dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="252dp"
         android:transitionName="logo_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,4 +32,17 @@
         app:layout_constraintEnd_toEndOf="@+id/img_logo"
         app:layout_constraintStart_toStartOf="@+id/img_logo"
         app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:text="Welcome to SDIO Internship Panel"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoname" />
 </androidx.constraintlayout.widget.ConstraintLayout>
