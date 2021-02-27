@@ -56,32 +56,32 @@ public class Registration extends AppCompatActivity {
                  mcity = city.getText().toString().trim();
                  auth = FirebaseAuth.getInstance();
 
+
                  if (TextUtils.isEmpty(uname)) {
-                     Toast.makeText(Registration.this, "plz enter your Name. ", Toast.LENGTH_SHORT).show();
-                     name.setError("Plz enter your Name");
+                     name.setError("Name Field can't be Empty");
                      return;
                  }
 
                  if (TextUtils.isEmpty(eml)) {
-                     Toast.makeText(Registration.this, "plz enter your Email ", Toast.LENGTH_SHORT).show();
-                     Email.setError(" plz enter your Email");
+                    // Toast.makeText(Registration.this, "plz enter your Email ", Toast.LENGTH_SHORT).show();
+                     Email.setError("Email Field can't be Empty");
                      return;
                  }
                  if (TextUtils.isEmpty(pass)) {
-                     Toast.makeText(Registration.this, "plz enter your password ", Toast.LENGTH_SHORT).show();
-                     password.setError("Password Length Must Be  Atleast Six");
+                     //Toast.makeText(Registration.this, "plz enter your password ", Toast.LENGTH_SHORT).show();
+                     password.setError("Password Field can't be Empty");
                      return;
                  }
 
                  if (TextUtils.isEmpty(mob)) {
-                     Toast.makeText(Registration.this, "plz enter your mobile No. ", Toast.LENGTH_SHORT).show();
-                     mobile.setError("Length Must Be  Exactly 10 digit");
+                     //Toast.makeText(Registration.this, "plz enter your mobile No. ", Toast.LENGTH_SHORT).show();
+                     mobile.setError("Mobile Number can't be Empty");
                      return;
                  }
 
                  if (TextUtils.isEmpty(mcity)) {
-                     Toast.makeText(Registration.this, "plz enter your city. ", Toast.LENGTH_SHORT).show();
-                     city.setError("plz enter your City");
+                     //Toast.makeText(Registration.this, "plz enter your city. ", Toast.LENGTH_SHORT).show();
+                     city.setError("City Field can't be Empty");
                      return;
                  }
 
