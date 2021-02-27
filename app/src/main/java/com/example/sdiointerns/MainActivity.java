@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-
-
         //Animation
         Context context;
         top_anim = AnimationUtils.loadAnimation(this,R.anim.top_anim );
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,Registration.class);
+                Intent intent = new Intent(MainActivity.this,Login.class);
                 Pair[] pairs = new Pair[2];
                 pairs[0] = new Pair<View,String>(logo,"logo_img");
                 pairs[1] = new Pair<View,String>(logo_title,"logo_text");

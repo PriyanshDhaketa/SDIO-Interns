@@ -44,7 +44,7 @@
         >
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/edt_name"
+
             app:hintTextColor="@color/black"
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
@@ -54,7 +54,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:hint="Full Name"
-                android:id="@+id/name"
+                android:id="@+id/edt_name"
                 android:textColor="@color/black"
                 android:inputType="textPersonName"
                 android:layout_height="wrap_content"/>
@@ -63,7 +63,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/edt_email"
+
             android:layout_marginTop="7dp"
             app:hintTextColor="@color/black"
             android:textColorHint="@color/black"
@@ -73,8 +73,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/email"
                 android:hint="Email ID"
+                android:id="@+id/edt_email_reg"
                 android:textColor="@color/black"
                 android:inputType="textEmailAddress"
                 android:layout_height="wrap_content"/>
@@ -82,7 +82,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/edt_pass_reg"
+
             app:hintTextColor="@color/black"
             android:layout_marginTop="7dp"
             android:textColorHint="@color/black"
@@ -94,8 +94,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/password"
                 android:hint="Password"
+                android:id="@+id/edt_pass_reg"
                 android:textColor="@color/black"
                 android:inputType="textPassword"
                 android:layout_height="wrap_content"/>
@@ -103,7 +103,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/edt_city"
+
             app:hintTextColor="@color/black"
             android:textColorHint="@color/black"
             android:layout_marginTop="7dp"
@@ -113,8 +113,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/city"
                 android:hint="City"
+                android:id="@+id/edt_city"
                 android:textColor="@color/black"
                 android:inputType="textPostalAddress"
                 android:layout_height="wrap_content"/>
@@ -122,7 +122,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/edt_phone"
+
             app:hintTextColor="@color/black"
             android:layout_marginTop="7dp"
             android:textColorHint="@color/black"
@@ -132,10 +132,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/phone"
                 android:hint="Phone Number"
                 android:textColor="@color/black"
                 android:inputType="phone"
+                android:id="@+id/edt_phone"
                 android:maxLength="10"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,7 +24,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class Registration extends AppCompatActivity {
 
     String uid;
-    EditText city,Email, password, mobile,name;
+    TextInputEditText city,Email, password, mobile,name;
     Button Submit;
     FirebaseAuth auth;
     FirebaseFirestore firestore;
@@ -34,15 +35,15 @@ public class Registration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_registration);
 
-        name =  findViewById(R.id.name);
-        Email =  findViewById(R.id.email);
-        password =  findViewById(R.id.password);
-        mobile =  findViewById(R.id.phone);
-        city =  findViewById(R.id.city);
+        name =  findViewById(R.id.edt_name);
+        Email =  findViewById(R.id.edt_email_reg);
+        password =  findViewById(R.id.edt_pass_reg);
+        mobile =  findViewById(R.id.edt_phone);
+        city =  findViewById(R.id.edt_city);
         Submit = findViewById(R.id.btn_register);
-
 
          Submit.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -53,6 +54,7 @@ public class Registration extends AppCompatActivity {
                  mob = mobile.getText().toString().trim();
                  uname = name.getText().toString().trim();
                  mcity = city.getText().toString().trim();
+                 auth = FirebaseAuth.getInstance();
 
                  if (TextUtils.isEmpty(uname)) {
                      Toast.makeText(Registration.this, "plz enter your Name. ", Toast.LENGTH_SHORT).show();
@@ -98,8 +100,6 @@ public class Registration extends AppCompatActivity {
                                              Intent intent = new Intent(Registration.this, Login.class);
                                              intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                              startActivity(intent);
-
-
                                          }
                                      });
                          }
