@@ -90,7 +90,7 @@ public class Registration extends AppCompatActivity {
                      @Override
                      public void onComplete(@NonNull Task<AuthResult> task) {
                          if (task.isSuccessful()) {
-                             user data = new user(eml, pass);
+                             user data = new user(eml, pass, uname, mcity, mob);
                              mDatabaseRef = FirebaseDatabase.getInstance().getReference("register")
                                      .child(auth.getInstance().getCurrentUser().getUid())
                                      .setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
