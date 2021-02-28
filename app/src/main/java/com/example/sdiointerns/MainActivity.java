@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,Login.class);
+                Intent intent = new Intent(MainActivity.this,Registration.class);
                 Pair[] pairs = new Pair[2];
                 pairs[0] = new Pair<View,String>(logo,"logo_img");
                 pairs[1] = new Pair<View,String>(logo_title,"logo_text");
                 Activity activity;
                 View view;
                 ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
-
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent,activityOptions.toBundle());
             }
         },SPLASH_TIME);
